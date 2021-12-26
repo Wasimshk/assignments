@@ -1,6 +1,6 @@
 # mean, median, min, max using user defined function
 
-'''l1=[1,2,4,3,5]
+l1=[1,2,4,3,5]
 def mean1(x):
     sum1=0
     n=len(l1)
@@ -37,12 +37,12 @@ def min1(x):
         if i<min:
             min = i
     return min
-print(min1(l1))'''
+print(min1(l1))
 
 
 # ATM operation
 
-'''print("welcome")
+print("welcome")
 p=int(input("enter the pin: "))
 if p==1234:
     print("1-withdraw\n2-account balance")
@@ -58,39 +58,39 @@ if p==1234:
 else:
         print("invalid pin")
 
-'''
-
-# import random 
-# rand_list = random.sample(range(1, 50), 10)
-# print(rand_list)
-
-# rand_list = [14, 15, 9, 34, 37, 47, 40, 49, 25]
-# n=len(rand_list)
-# def mean1(x):
-#     sum1=0
-#     for i in range(0,n):
-#         sum1 = sum1 + rand_list[i]
-#     return sum1/n
-# print(mean1(rand_list))
-
-# rand_list.sort()
-
-# def median1(x):
-#     if n%2==0:
-#         median1=rand_list[n//2]
-#         median2=rand_list[n//2-1]
-#         median=(median1+median2)/2
-#     else:
-#         median=rand_list[n//2]
-#     return median
-# print(median1(rand_list))
 
 
+import random 
+rand_list = random.sample(range(1, 50), 10)
+print(rand_list)
+
+rand_list = [14, 15, 9, 34, 37, 47, 40, 49, 25]
+n=len(rand_list)
+def mean1(x):
+    sum1=0
+    for i in range(0,n):
+        sum1 = sum1 + rand_list[i]
+    return sum1/n
+print(mean1(rand_list))
+
+rand_list.sort()
+
+def median1(x):
+    if n%2==0:
+        median1=rand_list[n//2]
+        median2=rand_list[n//2-1]
+        median=(median1+median2)/2
+    else:
+        median=rand_list[n//2]
+    return median
+print(median1(rand_list))
 
 
-# import random
-# rand = random.sample(range(1,10), 5)
-# print(rand)
+
+
+import random
+rand = random.sample(range(1,10), 5)
+print(rand)
 
 rand = [3, 6, 4, 9, 7]
 def max1(x):
